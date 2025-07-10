@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafe;
+    color: #333;
+}
+
+.catalogue-section {
+    padding: 80px 0;
+}
+
+.catalogue-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #023e8a;
+    border-left: 5px solid #0077b6;
+    padding-left: 15px;
+}
+
+.catalogue-section p,
+.catalogue-section li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.075rem;
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.catalogue-section ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.catalogue-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.catalogue-section img:hover {
+    transform: scale(1.02);
+}
+
+/* Ảnh + nội dung song song dạng grid */
+.catalogue-img-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.catalogue-img-block .text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1d3557;
+}
+
+.catalogue-img-block .text p {
+    font-size: 1.05rem;
+}
+
+  .section-img {
+        cursor: zoom-in;
+        transition: transform 0.3s ease;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1050;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .modal.show {
+        display: flex;
+    }
+    .modal-content {
+        max-width: 90vw;
+        max-height: 90vh;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+        animation: zoomIn 0.3s ease;
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+    }
+    .modal .close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1060;
+    }
+    @keyframes zoomIn {
+        from { transform: scale(0.85); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }

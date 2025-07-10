@@ -1,0 +1,40 @@
+
+.climate-section .climate-card h6 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.climate-section .climate-desc {
+  color: #333;
+}
+.trusted-brands-section .btn-explore {
+  background-color: #0024ff;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.trusted-brands-section .btn-explore:hover {
+  background-color: #001bcc;
+  color: #fff;
+}
+.btn-culture {
+  background-color: #0024ff;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn-culture:hover {
+  background-color: #001bcc;
+  color: #fff;
+}
+.bg-dark-opacity {
+  background: rgba(0, 0, 40, 0.8);
+}
+
