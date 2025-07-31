@@ -80,39 +80,24 @@
 
         .flip-box-back {
             transform: rotateY(180deg);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-            border-radius: 10px;
-            padding: 30px;
-            color: #cce6ff;
-            background-color: #001f4d;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
-
 
         .icon {
             font-size: 40px;
             color: #00bfff;
         }
     </style>
+
     <div>&nbsp;</div>
     <p class="tagline animate__animated animate__fadeIn">
-    WITH DECADES OF EXPERTISE AND A COMMITMENT TO INNOVATION, WE DELIVER ENERGY-EFFICIENT HEATING,
-    COOLING AND COLD CHAIN TECHNOLOGIES THAT PROTECT THE PLANET, TODAY AND FOR FUTURE GENERATIONS.
-</p>
+        VỚI NHIỀU THẬP KỶ KINH NGHIỆM VÀ CAM KẾT ĐỔI MỚI, CHÚNG TÔI MANG ĐẾN CÁC GIẢI PHÁP SƯỞI ẤM, LÀM MÁT
+        VÀ CHUỖI LẠNH TIẾT KIỆM NĂNG LƯỢNG, BẢO VỆ MÔI TRƯỜNG HÔM NAY VÀ CHO CẢ NHỮNG THẾ HỆ TƯƠNG LAI.
+    </p>
 
     <div class="video-wrapper animate__animated animate__fadeInUp">
         <video poster="{{ asset('images/index/video-placeholder.png') }}" controls style="width: 100%;">
             <source src="{{ asset('images/index/about-us.mp4') }}" type="video/mp4">
-            Your browser does not support the video tag.
+            Trình duyệt của bạn không hỗ trợ thẻ video.
         </video>
     </div>
 
@@ -121,13 +106,13 @@
             <div class="flip-box-inner">
                 <div class="flip-box-front">
                     <i class="fa-solid fa-globe"></i>
-                    <h3>SCALE</h3>
-                    <p>18,000+ Employees<br>in 40+ Countries</p>
+                    <h3>QUY MÔ</h3>
+                    <p>18.000+ Nhân sự<br>tại hơn 40 Quốc gia</p>
                 </div>
                 <div class="flip-box-back">
                     <i class="fa-solid fa-globe"></i>
-                    <h3>SCALE</h3>
-                    <p>Our global workforce delivers local excellence at scale.</p>
+                    <h3>QUY MÔ</h3>
+                    <p>Đội ngũ toàn cầu của chúng tôi mang lại hiệu quả cao tại từng địa phương.</p>
                 </div>
             </div>
         </div>
@@ -136,13 +121,13 @@
             <div class="flip-box-inner">
                 <div class="flip-box-front">
                     <i class="fa-solid fa-lightbulb"></i>
-                    <h3>INNOVATION</h3>
-                    <p>2,300+ Engineers<br>3,400+ Patents</p>
+                    <h3>ĐỔI MỚI</h3>
+                    <p>2.300+ Kỹ sư<br>3.400+ Bằng sáng chế</p>
                 </div>
                 <div class="flip-box-back">
                     <i class="fa-solid fa-lightbulb"></i>
-                    <h3>INNOVATION</h3>
-                    <p>Driving progress through creativity and deep engineering expertise.</p>
+                    <h3>ĐỔI MỚI</h3>
+                    <p>Thúc đẩy tiến bộ bằng sự sáng tạo và chuyên môn kỹ thuật sâu rộng.</p>
                 </div>
             </div>
         </div>
@@ -151,13 +136,13 @@
             <div class="flip-box-inner">
                 <div class="flip-box-front">
                     <i class="fa-solid fa-sync-alt"></i>
-                    <h3>RESILIENCE</h3>
-                    <p>200M+ Installations<br>80% Recurring Revenue</p>
+                    <h3>BỀN BỈ</h3>
+                    <p>200 Triệu+ Hệ thống lắp đặt<br>80% Doanh thu lặp lại</p>
                 </div>
                 <div class="flip-box-back">
-                     <i class="fa-solid fa-sync-alt"></i>
-                    <h3>RESILIENCE</h3>
-                    <p>Built for durability and sustained performance in all conditions.</p>
+                    <i class="fa-solid fa-sync-alt"></i>
+                    <h3>BỀN BỈ</h3>
+                    <p>Thiết kế để hoạt động ổn định và bền bỉ trong mọi điều kiện.</p>
                 </div>
             </div>
         </div>

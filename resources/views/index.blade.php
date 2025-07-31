@@ -23,9 +23,9 @@
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .content-text {
+    /* .content-text {
         flex: 1 1 45%;
-    }
+    } */
 
     .content-text h2 {
         font-size: 2rem;
@@ -105,32 +105,30 @@
     </div>
 
     <div class="content-text" data-aos="fade-left">
-        <h2>Who we are</h2>
+        <h2>Chúng tôi là ai</h2>
 
         <p>
-            At <strong>Copeland</strong>, we’re not just solving today's heating, cooling, and refrigeration needs —
-            we’re engineering the future of sustainable living. As a global leader across commercial, industrial,
-            cold chain, and residential sectors, our mission is clear: help the world breathe easier, live better,
-            and thrive smarter.
+            Tại <strong>Copeland</strong>, chúng tôi không chỉ giải quyết các nhu cầu hiện tại về sưởi, làm mát và làm lạnh —
+            mà còn kiến tạo tương lai sống bền vững. Là đơn vị dẫn đầu toàn cầu trong các lĩnh vực thương mại, công nghiệp,
+            chuỗi lạnh và dân dụng, sứ mệnh của chúng tôi rất rõ ràng: giúp thế giới hít thở dễ dàng hơn, sống tốt hơn và phát triển thông minh hơn.
         </p>
 
         <p>
-            Our innovations help reduce carbon footprints, elevate energy efficiency, and empower industries to
-            adopt climate-conscious refrigerants — protecting not only products like food and medicine, but also the
-            planet.
+            Các giải pháp sáng tạo của chúng tôi giúp giảm lượng khí thải carbon, nâng cao hiệu suất năng lượng và
+            hỗ trợ các ngành công nghiệp chuyển sang sử dụng môi chất lạnh thân thiện với môi trường —
+            nhằm bảo vệ không chỉ sản phẩm như thực phẩm và thuốc men, mà còn cả hành tinh này.
         </p>
 
         <p>
-            With a bold team of <strong>18,000+ professionals</strong> in over 40 countries and <strong>over 3,400
-                patents</strong>,
-            we stand on a foundation of relentless innovation. From 200 million successful installations to over
-            2,300 engineers pioneering what's next, Copeland is redefining sustainability for the HVACR world — and
-            beyond.
+            Với đội ngũ mạnh mẽ gồm <strong>hơn 18.000 nhân sự</strong> tại hơn 40 quốc gia và <strong>hơn 3.400 bằng sáng chế</strong>,
+            chúng tôi đứng vững trên nền tảng đổi mới không ngừng. Với 200 triệu thiết bị đã được lắp đặt thành công và hơn
+            2.300 kỹ sư đang tiên phong phát triển các công nghệ mới, Copeland đang tái định nghĩa sự bền vững trong thế giới HVACR — và hơn thế nữa.
         </p>
 
-        <a href="{{ route('about') }}" class="btn-about mt-3">About us</a>
+        <a href="{{ route('about') }}" class="btn-about mt-3">Về chúng tôi</a>
     </div>
 </section>
+
 
 @include('components.climate')
 @include('components.brands')

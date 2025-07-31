@@ -1,96 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Culture Section</title>
+    .btn-custom {
+        padding: 10px 20px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        width: auto;
+    }
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-
+    @media (max-width: 576px) {
         .btn-custom {
-            padding: 10px 20px;
-            font-weight: 600;
-            font-size: 14px;
+            width: 100%;
         }
+    }
 
-        @media (max-width: 576px) {
-            .btn-custom {
-                width: 100%;
-            }
-        }
+    .btn-outline-primary-custom {
+        border: 2px solid #0d6efd;
+        color: #0d6efd;
+        background-color: transparent;
+    }
 
-        .btn-custom {
-            padding: 10px 20px;
-            font-weight: 600;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
+    .btn-outline-primary-custom:hover {
+        background-color: #ffffff;
+        color: #eb0707;
+        border-color: #0b5ed7;
+    }
+</style>
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <!-- Hình ảnh -->
+            <div class="col-md-6 animate__animated animate__fadeInLeft">
+                <img src="{{ asset('images/index/culture-bg.jpg') }}" alt="Văn hóa Copeland"
+                    class="img-fluid rounded shadow" />
+            </div>
 
-        /* Custom hover for outline button */
-        .btn-outline-primary-custom {
-            border: 2px solid #0d6efd;
-            color: #0d6efd;
-            background-color: transparent;
-        }
-
-        .btn-outline-primary-custom:hover {
-            background-color: #ffffff;
-            color: #eb0707;
-            border-color: #0b5ed7;
-        }
-
-        @media (max-width: 576px) {
-            .btn-custom {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- Our Culture Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center g-4">
-                <!-- Image -->
-                <div class="col-md-6 animate__animated animate__fadeInLeft">
-                    <img src="{{ asset('images/index/culture-bg.jpg') }}" alt="Our Culture"
-                        class="img-fluid rounded shadow" />
-                </div>
-
-                <!-- Content -->
-                <div class="col-md-6 animate__animated animate__fadeInUp">
-                    <h2 class="mb-3 section-title">Our culture</h2>
-                    <p>
-                        Our people are the foundation of everything we achieve. We are committed to fostering a
-                        high-performing culture that empowers our 18,000 colleagues across the globe to excel every day.
-                    </p>
-                    <p>
-                        Through an unwavering focus on safety, inclusion and sustainable innovation, we ensure our teams
-                        thrive in an environment where they feel safe, valued, supported and driven to make a meaningful
-                        impact.
-                    </p>
-                    <div class="d-flex flex-wrap gap-3 mt-3">
-                        <a href="#" class="btn btn-outline-primary-custom btn-custom">WORKING AT COPELAND</a>
-                       <a href="#" class="btn btn-outline-primary-custom btn-custom">SEARCH CAREERS</a>
-                    </div>
+            <!-- Nội dung -->
+            <div class="col-md-6 animate__animated animate__fadeInUp">
+                <h2 class="mb-3 section-title">Văn hóa của chúng tôi</h2>
+                <p>
+                    Con người là nền tảng cho mọi thành tựu của Copeland. Chúng tôi xây dựng một môi trường hiệu suất cao, giúp hơn 18.000 nhân sự trên toàn cầu phát triển mỗi ngày.
+                </p>
+                <p>
+                    Với cam kết về an toàn, sự hòa nhập và đổi mới bền vững, chúng tôi đảm bảo rằng mọi thành viên đều cảm thấy an toàn, được tôn trọng, hỗ trợ và có động lực để tạo ra giá trị tích cực.
+                </p>
+                <div class="d-flex flex-wrap gap-3 mt-3">
+                    <a href="#" class="btn btn-outline-primary-custom btn-custom">LÀM VIỆC TẠI COPELAND</a>
+                    &nbsp;
+                    <a href="#" class="btn btn-outline-primary-custom btn-custom">TÌM VIỆC NGAY</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    </div>
+</section>

@@ -5,7 +5,8 @@ body {
     line-height: 1.6;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 600;
 }
 
@@ -50,7 +51,8 @@ table.table th {
     text-align: center;
 }
 
-table.table td, table.table th {
+table.table td,
+table.table th {
     border: 1px solid #dee2e6;
     padding: 8px 12px;
     vertical-align: middle;
@@ -72,6 +74,7 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
 #backToTop {
     position: fixed;
     bottom: 30px;
@@ -93,44 +96,63 @@ footer {
     background: #023e8a;
     transform: scale(1.1);
 }
+
 .section-img {
-        cursor: zoom-in;
-        transition: transform 0.3s ease;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    animation: zoomIn 0.3s ease;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+.modal .close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1060;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
     }
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1050;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.9);
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
+
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
-    .modal.show {
-        display: flex;
-    }
-    .modal-content {
-        max-width: 90vw;
-        max-height: 90vh;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-        border-radius: 8px;
-        animation: zoomIn 0.3s ease;
-        box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
-    }
-    .modal .close {
-        position: absolute;
-        top: 15px;
-        right: 25px;
-        color: #ffffff;
-        font-size: 36px;
-        font-weight: bold;
-        cursor: pointer;
-        z-index: 1060;
-    }
-    @keyframes zoomIn {
-        from { transform: scale(0.85); opacity: 0; }
-        to { transform: scale(1); opacity: 1; }
-    }
+}
+
+img.img-fluid {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
